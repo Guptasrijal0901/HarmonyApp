@@ -1,0 +1,5 @@
+npx : npx ek npm ka countor part hai 
+esse hm sirf ek baar uase kar rahe hai apne system mai install nhi kar rahe 
+one time run hota hai npm 
+
+jsx is javascript syntax extension 
