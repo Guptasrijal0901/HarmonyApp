@@ -1,8 +1,9 @@
 // "use client"
 import React, { useState } from 'react'
 import "./Header.css";
-
+import { useNavigate } from 'react-router-dom';
 const Header = () => {
+  const navigate = useNavigate();
 const [ourHarmony, setourHarmony] = useState([]);
 const [email, setemail] = useState("");
 const [name, setname] = useState("");
@@ -53,9 +54,6 @@ return (
 <li className="nav-item">
 <a className="nav-link active" href="/">Home</a>
 </li>
-<li className="nav-item">
-<a className="nav-link active" href="/About">About</a>
-</li>
 </ul>
 </div>
 </div>
@@ -92,7 +90,7 @@ onClick={createHarmony}>Submit</a>
 </div>
 {/* Display entered data */}
 {ourHarmony.map((v, i) => (
-  <div key={i}>
+  <div  className='mapping' key={i}>
     <h1>Your Harmony</h1>
     <ul>
       <li>Email: {v.email}</li>
@@ -102,7 +100,7 @@ onClick={createHarmony}>Submit</a>
     <button
       onClick={() => setourHarmony((oldHarmony) => oldHarmony.filter((_, index) => index !== i))}
       type='button'
-    >
+      className='btn btn-primary'>
       Delete
     </button>
   </div>

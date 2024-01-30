@@ -4,3 +4,13 @@
     margin: auto;
     margin-top: 60px;
 }
+.mapping h1{
+    text-align: center;
+}
+.mapping{
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.mapping h1 li{
+    text-align: center;
+}

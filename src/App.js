@@ -7,8 +7,8 @@ function App() {
     <div>
     <Router>
     <Routes>
-    <Route  path='/' Component={Header}/>
-    <Route  path='/About' Component={About}/>
+    <Route  path='/' Component={About}/>
+    <Route  path='/start' Component={Header}/>
     </Routes>
     </Router>
     </div>
